@@ -1,17 +1,17 @@
-
+import firstBanner from "../../assets/images/banner/1.jpg"
 
 const HomeBanner = () => {
     return (
         <div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
-                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 m-12">
-                        <p className="text-3xl m-5 text-white">Affordable Price For Car Servicing</p>
+                    <img src={firstBanner} className="w-full" />
+                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 ml-10 w-full">
+                        <p className="text-7xl mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
                         <p className="m-5 text-2xl text-white">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
-                        <div className="flex gap-5 m-5 ">
-                            <button className="btn btn-primary">Discover More</button>
-                            <button className="btn btn-primary">Discover Latest</button>
+                        <div className="m-5 flex gap-5 mt-10 ">
+                            <button className="btn bg-red-500 font-bold text-xl text-white">Discover More</button>
+                            <button className="btn bg-transparent font-bold text-xl text-white">Discover Latest</button>
 
                         </div>
                     </div>
