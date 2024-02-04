@@ -1,3 +1,4 @@
+import AboutUs from "../AboutUs/AboutUs";
 import HomeBanner from "../HomeBannner/HomeBanner";
 
 
@@ -5,8 +6,9 @@ import HomeBanner from "../HomeBannner/HomeBanner";
 const Home = () => {
     return (
         <div>
-            <h2>this is home</h2>
+            
             <HomeBanner></HomeBanner>
+            <AboutUs></AboutUs>
             
         </div>
     );

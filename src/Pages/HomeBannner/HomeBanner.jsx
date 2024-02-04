@@ -38,8 +38,8 @@ const HomeBanner = () => {
                     </div>
 
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-2">
-                    <a href="#slide4" className="btn btn-circle hover:bg-red-500">❮</a> 
-                    <a href="#slide2" className="btn btn-circle hover:bg-red-500">❯</a>
+                    <a href="#slide1" className="btn btn-circle hover:bg-red-500">❮</a> 
+                    <a href="#slide3" className="btn btn-circle hover:bg-red-500">❯</a>
                     </div>
                 </div> 
                 <div id="slide3" className="carousel-item relative w-full">
@@ -55,8 +55,8 @@ const HomeBanner = () => {
                     </div>
 
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-2">
-                    <a href="#slide4" className="btn btn-circle hover:bg-red-500">❮</a> 
-                    <a href="#slide2" className="btn btn-circle hover:bg-red-500">❯</a>
+                    <a href="#slide2" className="btn btn-circle hover:bg-red-500">❮</a> 
+                    <a href="#slide4" className="btn btn-circle hover:bg-red-500">❯</a>
                     </div>
                 </div> 
                 <div id="slide4" className="carousel-item relative w-full">
@@ -72,8 +72,8 @@ const HomeBanner = () => {
                     </div>
 
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 gap-2">
-                    <a href="#slide4" className="btn btn-circle hover:bg-red-500">❮</a> 
-                    <a href="#slide2" className="btn btn-circle hover:bg-red-500">❯</a>
+                    <a href="#slide3" className="btn btn-circle hover:bg-red-500">❮</a> 
+                    <a href="#slide1" className="btn btn-circle hover:bg-red-500">❯</a>
                     </div>
                 </div>
             </div>
