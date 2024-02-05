@@ -9,11 +9,11 @@ const HomeBanner = () => {
         <div>
             <div className="carousel w-full h-[600px]">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={firstBanner} className="w-full h-full" />
-                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 ml-10 w-full">
-                        <p className="text-7xl mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
-                        <p className="m-5 text-2xl text-white">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
-                        <div className="m-5 flex gap-5 mt-10 ">
+                    <img src={firstBanner} className="w-full rounded-xl" />
+                    <div className="absolute justify-start transform -translate-y-1/2  top-1/2 h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
+                        <p className="text-7xl ml-10 mt-10 mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
+                        <p className="ml-10 text-2xl text-white p-5">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
+                        <div className="ml-10 p-5 flex gap-5 mt-10 ">
                             <button className="btn bg-red-500 font-bold text-xl text-white">Discover More</button>
                             <button className="btn bg-transparent font-bold text-xl text-white">Discover Latest</button>
 
@@ -26,11 +26,11 @@ const HomeBanner = () => {
                     </div>
                 </div> 
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src={secondBanner} className="w-full" />
-                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 ml-10 w-full">
-                        <p className="text-7xl mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
-                        <p className="m-5 text-2xl text-white">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
-                        <div className="m-5 flex gap-5 mt-10 ">
+                    <img src={secondBanner} className="w-full rounded-xl" />
+                    <div className="absolute justify-start transform -translate-y-1/2   top-1/2 gap-2 h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
+                        <p className="text-7xl ml-10 mt-10 mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
+                        <p className="ml-10 text-2xl text-white p-5">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
+                        <div className="ml-10 p-5 flex gap-5 mt-10 ">
                             <button className="btn bg-red-500 font-bold text-xl text-white">Discover More</button>
                             <button className="btn bg-transparent font-bold text-xl text-white">Discover Latest</button>
 
@@ -43,11 +43,11 @@ const HomeBanner = () => {
                     </div>
                 </div> 
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src={thirdBanner} className="w-full" />
-                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 ml-10 w-full">
-                        <p className="text-7xl mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
-                        <p className="m-5 text-2xl text-white">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
-                        <div className="m-5 flex gap-5 mt-10 ">
+                    <img src={thirdBanner} className="w-full rounded-xl" />
+                    <div className="absolute justify-start transform -translate-y-1/2   top-1/2 gap-2 h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
+                        <p className="text-7xl ml-10 mt-10 mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
+                        <p className="ml-10 text-2xl text-white p-5">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
+                        <div className="ml-10 p-5 flex gap-5 mt-10 ">
                             <button className="btn bg-red-500 font-bold text-xl text-white">Discover More</button>
                             <button className="btn bg-transparent font-bold text-xl text-white">Discover Latest</button>
 
@@ -60,11 +60,11 @@ const HomeBanner = () => {
                     </div>
                 </div> 
                 <div id="slide4" className="carousel-item relative w-full">
-                    <img src={fourthBanner} className="w-full" />
-                    <div className="absolute justify-start transform -translate-y-1/2 left-5 right-5 top-1/2 gap-2 ml-10 w-full">
-                        <p className="text-7xl mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
-                        <p className="m-5 text-2xl text-white">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
-                        <div className="m-5 flex gap-5 mt-10 ">
+                    <img src={fourthBanner} className="w-full rounded-xl" />
+                    <div className="absolute justify-start transform -translate-y-1/2   top-1/2 gap-2 h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
+                        <p className="text-7xl ml-10 mt-10 mb-5 font-bold text-white p-5">Affordable <br /> Price For Car <br /> Servicing</p>
+                        <p className="ml-10 text-2xl text-white p-5">There are many variations of passages of  available,<br /> but the majority have suffered alteration in some form</p>
+                        <div className="ml-10 p-5 flex gap-5 mt-10 ">
                             <button className="btn bg-red-500 font-bold text-xl text-white">Discover More</button>
                             <button className="btn bg-transparent font-bold text-xl text-white">Discover Latest</button>
 
