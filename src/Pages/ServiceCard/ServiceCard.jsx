@@ -10,7 +10,7 @@ const ServiceCard = ({service}) => {
             className='w-[360px] m-5'
             hoverable
             
-            cover={<img alt="example" src={img} />}
+            cover={<img className='border-2 p-5 rounded-xl border-white' alt="example" src={img} />}
         >
             <Meta className='text-3xl' title={title} />
             <div className='flex justify-between'><p className='text-xl mt-3 text-red-500'>Price : {price}</p>
