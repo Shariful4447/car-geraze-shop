@@ -2,17 +2,18 @@ import { Card } from 'antd';
 const { Meta } = Card;
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const ServiceCard = () => {
+const ServiceCard = ({service}) => {
+    const {img, title, price} = service;
     return (
         <div>
             <Card
-            className='w-[350px] m-5'
+            className='w-[360px] m-5'
             hoverable
             
-            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            cover={<img alt="example" src={img} />}
         >
-            <Meta title="Europe Street beat" />
-            <div className='flex justify-between'><p className='text-xl mt-3'>Price</p>
+            <Meta className='text-3xl' title={title} />
+            <div className='flex justify-between'><p className='text-xl mt-3 text-red-500'>Price : {price}</p>
                 <button><ArrowForwardIcon className='text-2xl text-red-500'/></button>
             </div>
         </Card>
