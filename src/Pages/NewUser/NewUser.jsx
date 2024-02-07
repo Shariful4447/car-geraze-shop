@@ -3,7 +3,7 @@ import './NewUser.css'
 const NewUser = () => {
     return (
         <div>
-            <h2>new user is here</h2>
+            
             <div className='flex gap-5 m-5'>
                 <div className="App">
                     <h1 className='text-2xl font-bold text-center m-5'>Automatic Findings</h1>
