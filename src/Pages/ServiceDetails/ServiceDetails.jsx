@@ -3,6 +3,9 @@ import newImage from '../../assets/images/banner/3.jpg'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import AddchartIcon from '@mui/icons-material/Addchart';
 import logo from '../../assets/logo.svg'
+import firstBanner from "../../assets/images/banner/1.jpg"
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+
 const ServiceDetails = () => {
     return (
         <div>
@@ -16,6 +19,112 @@ const ServiceDetails = () => {
                 <div className='lg:col-span-3 mb-5'>
                     
                     <img className='h-96 w-full border-2 rounded-xl' src={newImage} alt="" />
+                    <div className='text-center mt-6'>
+                        <h2 className='m-6 text-2xl'>Unique Car Engine Service</h2>
+                        <p className='text-xl'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                    </div>
+
+                    <div className='mt-10 grid grid-cols-2 justify-items-center gap-5'>
+                        <div className="card w-96 h-56 bg-[#e5e7eb] text-black">
+                            <div className="card-body">
+                                <div className='p-5'>
+                                    <h2 className="card-title text-xl mb-2">Instant Car Services</h2>
+                                    <p className='text-lg'>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
+                                </div>
+                               
+                            
+                            </div>
+                        </div>
+                        <div className="card w-96 h-56 bg-[#e5e7eb] text-black">
+                            <div className="card-body">
+                                <div className='p-5'>
+                                    <h2 className="card-title text-xl mb-2">Instant Car Services</h2>
+                                    <p className='text-lg'>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
+                                </div>
+                               
+                            
+                            </div>
+                        </div>
+                        <div className="card w-96 h-56 bg-[#e5e7eb] text-black">
+                            <div className="card-body">
+                                <div className='p-5'>
+                                    <h2 className="card-title text-xl mb-2">Instant Car Services</h2>
+                                    <p className='text-lg'>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
+                                </div>
+                               
+                            
+                            </div>
+                        </div>
+                        <div className="card w-96 h-56 bg-[#e5e7eb] text-black">
+                            <div className="card-body">
+                                <div className='p-5'>
+                                    <h2 className="card-title text-xl mb-2">Instant Car Services</h2>
+                                    <p className='text-lg'>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
+                                </div>
+                               
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='mt-6 text-xl'>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                    </div>
+                    <div className='mt-6 text-2xl font-bold'>
+                        <p>3 Simple Steps to Process</p>
+                    </div>
+
+                    <div className='mt-2 grid grid-cols-3 gap-5'>
+                        <div className="card w-80 bg-base-100 shadow-xl">
+                            <div className="card-body text-center">
+                                <div className="card-actions justify-center">
+                                    <div className="radial-progress bg-red-500 text-primary-content border-4 border-red-500" style={{"--value":100}} role="progressbar">1</div>
+                                </div>
+
+                                <h2 className=" m-2 text-2xl text-center">Step One</h2>
+                                <p className='text-xl'>It uses a dictionary of over 200 .</p>
+                                
+                            </div>
+                        </div>
+                        <div className="card w-80 bg-base-100 shadow-xl">
+                            <div className="card-body text-center">
+                                <div className="card-actions justify-center">
+                                    <div className="radial-progress bg-red-500 text-primary-content border-4 border-red-500" style={{"--value":100}} role="progressbar">2</div>
+                                </div>
+
+                                <h2 className=" m-2 text-2xl text-center">Step Two</h2>
+                                <p className='text-xl'>It uses a dictionary of over 200 .</p>
+                                
+                            </div>
+                        </div>
+                        <div className="card w-80 bg-base-100 shadow-xl">
+                            <div className="card-body text-center">
+                                <div className="card-actions justify-center">
+                                    <div className="radial-progress bg-red-500 text-primary-content border-4 border-red-500" style={{"--value":100}} role="progressbar">3</div>
+                                </div>
+
+                                <h2 className=" m-2 text-2xl text-center">Step Three</h2>
+                                <p className='text-xl'>It uses a dictionary of over 200 .</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='mt-10'>
+                        <div className="hero h-96" style={{backgroundImage: `url(${firstBanner})`}}>
+                            <div className="hero-overlay bg-opacity-60"></div>
+                            <div className="hero-content text-center text-neutral-content">
+                                <div className="w-16">
+                                    <button className="btn btn-circle h-16 w-16 btn-outline bg-white">
+                                        <PlayArrowIcon></PlayArrowIcon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div className='lg:col-span-1'>
                     <div className='bg-[#f1f5f9] h-[500px]'>
