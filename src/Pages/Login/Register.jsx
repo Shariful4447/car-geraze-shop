@@ -7,6 +7,14 @@ import GoogleIcon from '@mui/icons-material/Google';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+    const handleRegister = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(name, email, password);
+    }
     return (
         <div>
         <div className="hero min-h-1/2 bg-base-200">
@@ -14,24 +22,24 @@ const Register = () => {
                 
                 <div className="card shrink-0 w-full max-w-md h-[700px] shadow-2xl bg-base-100 m-20">
                     <h2 className='text-center text-4xl font-bold mt-10'>Sign Up</h2>
-                    <form className="card-body">
+                    <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" placeholder="Your Name" className="input input-bordered" required />
+                        <input type="text" name='name' placeholder="Your Name" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>

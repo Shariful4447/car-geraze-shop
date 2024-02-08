@@ -3,10 +3,15 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
-import Twitter from '@mui/icons-material/Twitter';
+
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <div>
             <div className="hero min-h-1/2 bg-base-200">
@@ -14,7 +19,7 @@ const Login = () => {
                     
                     <div className="card shrink-0 w-full max-w-md h-[600px] shadow-2xl bg-base-100 m-20">
                         <h2 className='text-center text-4xl font-bold mt-10'>Login Here</h2>
-                        <form className="card-body">
+                        <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
