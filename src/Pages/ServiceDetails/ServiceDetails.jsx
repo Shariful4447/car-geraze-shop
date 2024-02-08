@@ -19,13 +19,15 @@ const ServiceDetails = () => {
                 </div>
                 <div className='lg:col-span-1'>
                     <div className='bg-[#f1f5f9] h-[500px]'>
-                        <h2 className='text-xl text-center'>Service Type</h2>
-                        <div className='m-10 p-2'>
-                            <button className="btn h-16 btn-outline bg-white hover:bg-red-500 w-full mb-4">Secondary <ArrowForwardIcon className='text-2xl text-red-500'/></button> <br />
-                            <button className="btn btn-outline bg-white hover:bg-red-500 h-16 w-full mb-4">Secondary</button> <br />
-                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500  w-full mb-4">Secondary</button> <br />
-                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500 w-full mb-4">Secondary</button> <br />
-                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500 w-full">Secondary</button>
+                        <div className=''>
+                            <h2 className='text-xl font-bold p-2 text-center text-xl'>Service Type</h2>
+                        </div>
+                        <div className='m-8 p-2'>
+                            <button className="btn h-16 btn-outline bg-white hover:bg-red-500 w-full mb-4">Full Car Repair<ArrowForwardIcon className='text-2xl text-red-500'/></button> <br />
+                            <button className="btn btn-outline bg-white hover:bg-red-500 h-16 w-full mb-4">Engine Repair<ArrowForwardIcon className='text-2xl text-red-500'/></button> <br />
+                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500  w-full mb-4">Automatic Services<ArrowForwardIcon className='text-2xl text-red-500'/></button> <br />
+                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500 w-full mb-4">Engine Oil Change<ArrowForwardIcon className='text-2xl text-red-500'/></button> <br />
+                            <button className="btn btn-outline h-16 bg-white hover:bg-red-500 w-full">Battery Charge<ArrowForwardIcon className='text-2xl text-red-500'/></button>
                         </div>
                     </div>
 
@@ -61,22 +63,27 @@ const ServiceDetails = () => {
                         </div>
                         
                     </div>
-                    <div className='bg-[#f1f5f9] h-[500px] mt-6'>
-                        <h2 className='text-xl text-center'>Service Type</h2>
-                        <div className='m-10 p-2'>
+                    <div className='bg-[#0f172a] h-[400px] mb-5'>
+                        
+                        <div className='m-10 p-2 text-center'>
                             <div>
-                                <img src={logo} alt="" />
-                                <p>Need Help? We Are Here
+                                <img className='mt-16 mx-auto mb-5' src={logo} alt="" />
+                                <p className='text-xl text-white'>Need Help? We Are Here
                                     To Help You</p>
                             </div>
                             <div className='bg-white text-center h-[100px] relative mt-5'>
-                                <h2 className='text-2xl font-bold mt-2 p-2'>Car Doctor Special</h2>
-                                <p className='text-xl font-bold'>Save up to <span className='text-red-500'>60% off</span> </p>
+                                <h2 className='text-2xl  font-bold mt-2 p-2'>Car Doctor Special</h2>
+                                <p className='text-xl  font-bold'>Save up to <span className='text-red-500'>60% off</span> </p>
                                 <div>
                                     <p className='bg-red-500 absolute text-white top-20 right-10 p-2 text-center w-48'>Get A Quote</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className='mb-5'>
+                        <h2 className='text-3xl font-bold m-2'>Price : 200$</h2>
+                        <button className="btn text-xl h-10 btn-outline bg-red-500 w-full">Procceed Checkout</button>
                     </div>
                 </div>
 
