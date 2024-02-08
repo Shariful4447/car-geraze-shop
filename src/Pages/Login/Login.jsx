@@ -5,11 +5,26 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../Providers/AuthProviders';
 
 const Login = () => {
 
-    const handleLogin = (e) => {
-        e.preventDefault();
+    const {signIn} = useContext(AuthContext);
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+        signIn(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error => console.log(error))
     }
 
     return (
@@ -24,13 +39,13 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="email" className="input input-bordered" required />
+                            <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" placeholder="password" className="input input-bordered" required />
+                            <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
@@ -46,7 +61,7 @@ const Login = () => {
                                 <button className="btn btn-circle btn-outline "> <TwitterIcon/></button>
                                 <button className="btn btn-circle btn-outline "> <GoogleIcon /></button>
                             </div>
-                            <p className='text-center mt-2'>Have an account? <span className='text-red-500'> <Link to='/register'>Sign In </Link> </span></p>
+                            <p className='text-center mt-2'>Have an account? <span className='text-red-500'> <Link to='/register'>Sign Up </Link> </span></p>
                         </form>
                         
 
