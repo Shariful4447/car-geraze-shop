@@ -5,6 +5,7 @@ import AddchartIcon from '@mui/icons-material/Addchart';
 import logo from '../../assets/logo.svg'
 import firstBanner from "../../assets/images/banner/1.jpg"
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import { Link } from 'react-router-dom';
 
 const ServiceDetails = () => {
     return (
@@ -192,7 +193,9 @@ const ServiceDetails = () => {
 
                     <div className='mb-5'>
                         <h2 className='text-3xl font-bold m-2'>Price : 200$</h2>
-                        <button className="btn text-xl h-10 btn-outline bg-red-500 w-full">Procceed Checkout</button>
+                        <Link to='/checkout'>
+                            <button className="btn text-xl h-10 btn-outline bg-red-500 w-full">Procceed Checkout</button>
+                        </Link>
                     </div>
                 </div>
 
