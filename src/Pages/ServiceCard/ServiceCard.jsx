@@ -15,7 +15,7 @@ const ServiceCard = ({service}) => {
         >
             <Meta className='text-3xl' title={title} />
             <div className='flex justify-between'><p className='text-xl mt-3 text-red-500'>Price : {price}</p>
-                <Link to={`/checkout/${_id}`}>
+                <Link to={`/services/${_id}`}>
                     <button><ArrowForwardIcon className='text-2xl text-red-500'/></button>
                 </Link>
             </div>
