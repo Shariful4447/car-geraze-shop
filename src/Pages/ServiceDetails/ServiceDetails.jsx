@@ -10,7 +10,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 const ServiceDetails = () => {
 
     const services = useLoaderData();
-    const {price} = services;
+    const {_id, title, price} = services;
     console.log(services);
 
     return (
@@ -26,7 +26,7 @@ const ServiceDetails = () => {
                     
                     <img className='h-96 w-full border-2 rounded-xl' src={newImage} alt="" />
                     <div className='text-center mt-6'>
-                        <h2 className='m-6 text-2xl'>Unique Car Engine Service</h2>
+                        <h2 className='m-6 text-2xl'>{title}</h2>
                         <p className='text-xl'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
                     </div>
 
@@ -198,7 +198,7 @@ const ServiceDetails = () => {
 
                     <div className='mb-5'>
                         <h2 className='text-3xl font-bold m-2'>Price : {price}</h2>
-                        <Link to='/checkout'>
+                        <Link to={`/checkout/${_id}`}>
                             <button className="btn text-xl h-10 btn-outline bg-red-500 w-full">Procceed Checkout</button>
                         </Link>
                     </div>
