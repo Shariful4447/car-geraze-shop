@@ -7,6 +7,7 @@ import Register from "../Pages/Login/Register";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import CheckOut from "../Pages/CheckOut/CheckOut";
 import Bookings from "../Pages/Bookings/Bookings";
+import PrivateRoutes from "./PrivateRoutes";
 
 
 
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
        },
        {
         path: "all-bookings",
-        element: <Bookings></Bookings>
+        element: <PrivateRoutes><Bookings></Bookings></PrivateRoutes>
        
        },
       ],
