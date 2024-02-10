@@ -58,9 +58,14 @@ const NavBar = () => {
                         <a className="btn btn-ghost text-xl">Appointment</a>
                     </Link>
                     {
-                        user?.email? <Link className="border-2 border-black text-red-500 text-xl">
-                        <a onClick={handleLogOut} className="btn btn-ghost text-xl">LogOut</a>
-                    </Link>
+                        user?.email? <>
+                        <Link to='/all-bookings' className="border-2 border-black text-red-500 text-xl ml-2">
+                            <a className="btn btn-ghost text-xl">My Bookings</a>
+                        </Link>
+                        <Link className="border-2 border-black text-red-500 text-xl">
+                            <a onClick={handleLogOut} className="btn btn-ghost text-xl">LogOut</a>
+                        </Link>
+                        </>
                     : 
                     <Link to='/login' className="border-2 border-black text-red-500 text-xl">
                         <a className="btn btn-ghost text-xl">Login</a>
