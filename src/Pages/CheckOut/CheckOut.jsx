@@ -1,19 +1,60 @@
 import { useLoaderData } from 'react-router-dom';
 import serviceDetails from '../../assets/images/checkout/checkout.png'
+import { useContext } from 'react';
+import { AuthContext } from '../Providers/AuthProviders';
+import Swal from "sweetalert2";
+
 
 const CheckOut = () => {
     const checkout = useLoaderData();
-    const {title} = checkout;
+    const {title, price, _id, img} = checkout;
+    const user = useContext(AuthContext);
+    
+    
 
     const handleBookService=(e) =>{
         e.preventDefault();
         const form = e.target;
-        const fname = form.fname.value;
-        const lname = form.lname.value;
+        const name = form.name.value;
+        const amount = form.amount.value;
         const phone = form.phone.value;
         const email = form.email.value;
         const message = form.message.value;
-        console.log(fname, lname, email, phone, message);
+        
+        const booking = {
+            customerName: name,
+            service: title,
+            img: img,
+            amount: amount,
+            service_id: _id,
+            email: email,
+            phone,
+            message
+
+
+
+        }
+        console.log(booking);
+
+        fetch('http://localhost:3000/bookings', {
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+        .then(res=>res.json())
+        .then(data =>{
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire(
+                    "Success!",
+                    "Successfully Booked Service",
+                    "success"
+             )
+
+            }
+        })
     }
     return (
         <div>
@@ -40,15 +81,15 @@ const CheckOut = () => {
                             <div className='flex gap-10 mx-auto'>
                                 <div className="form-control w-[550px]">
                                     <label className="label">
-                                        <span className="label-text">First Name</span>
+                                        <span className="label-text">Name</span>
                                     </label>
-                                    <input type="text" name='fname' placeholder="First Name" className="input input-bordered" required />
+                                    <input type="text" name='name' placeholder="First Name" className="input input-bordered" required />
                                 </div>
                                 <div className="form-control w-[550px]">
                                     <label className="label">
-                                        <span className="label-text">Last Name</span>
+                                        <span className="label-text">Due Amount</span>
                                     </label>
-                                    <input type="text" name='lname'  placeholder="Last Name" className="input input-bordered" required />
+                                    <input type="text" name='amount' defaultValue={"$" + price}  placeholder="Last Name" className="input input-bordered" required />
                                 </div>
                             </div>
                             <div className='flex gap-10 mx-auto'>
@@ -62,7 +103,7 @@ const CheckOut = () => {
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" name='email' placeholder="email" className="input input-bordered" required />
+                                    <input type="email" name='email' defaultValue={user?.user?.email} placeholder="email" className="input input-bordered" required />
                                 </div>
                                 
                             </div>
