@@ -59,8 +59,8 @@ const NavBar = () => {
                     </Link>
                     {
                         user?.email? <>
-                        <Link to='/all-bookings' className="border-2 border-black text-red-500 text-xl ml-2">
-                            <a className="btn btn-ghost text-xl">My Bookings</a>
+                        <Link to='/all-bookings' className="border-2 border-black text-red-500 text-xl mr-2">
+                            <a className="btn btn-ghost text-xl">Bookings</a>
                         </Link>
                         <Link className="border-2 border-black text-red-500 text-xl">
                             <a onClick={handleLogOut} className="btn btn-ghost text-xl">LogOut</a>
