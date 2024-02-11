@@ -12,7 +12,7 @@ const PrivateRoutes = ({children}) => {
         return children;
     }
 
-    return <Navigate to="/all-bookings" replace></Navigate>;
+    return <Navigate to="/bookings" replace></Navigate>;
 };
 
 export default PrivateRoutes;
